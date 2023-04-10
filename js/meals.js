@@ -10,6 +10,7 @@ const displayMeals = meals =>{
     //console.log(meals);
     //step-1 container element
     const mealsContainer = document.getElementById('meals-container');
+    mealsContainer.innerHTML ='';
     meals.forEach(meal => {
         console.log(meal); 
         //step-2 create child for each element 
@@ -32,7 +33,8 @@ const displayMeals = meals =>{
 }
 const searchMeals = () =>{
     const searchText = document.getElementById('search-field').value;
+    //search meals
     console.log('btn clicked');
     loadMeals(searchText);
 }
-loadMeals('chi');
+loadMeals('rice');
